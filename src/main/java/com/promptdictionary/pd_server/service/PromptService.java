@@ -15,4 +15,24 @@ public class PromptService {
     public Object getTrendingPrompts() {
         return promptRepository.getTrendingPrompts();
     }
+
+    public Object autocompleteSearch(String query) {
+        return promptRepository.autocompleteSearch(query);
+    }
+
+    public Object fullPromptSearch(String query) {
+        return promptRepository.fullPromptSearch(query);
+    }
+
+    public Object getPromptById(String promptId) {
+        return promptRepository.getPromptById(promptId);
+    }
+
+    public Object getPromptsByCategory(String categorySlug) {
+        return promptRepository.getPromptsByCategory(categorySlug);
+    }
+
+    public Object getPromptsByTag(String tagName) {
+        return promptRepository.getPromptsByTag(tagName);
+    }
 }
